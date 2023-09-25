@@ -40,7 +40,7 @@ Follow these steps to set up the Selenium Golang Application on a Debian-based s
     ```bash
     source ~/.zshrc
     ```
-### 4. Set the chromedriver Environment Variable
+### 4. Set the `chromedriver` Environment Variable
   - Find the path where you decided to extract the Chrome Driver binary.
   - Open your `~/.zshrc` file (or `~/.bashrc` if using bash) in a text editor.
     ```bash
