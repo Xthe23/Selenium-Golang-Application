@@ -24,42 +24,49 @@ Follow these steps to set up the Selenium Golang Application on a Debian-based s
 
 ### 3. Set the `CHROME_BINARY_PATH` Environment Variable
 
-- Find the path where you decided to extract the Chrome binary.
-- Open your `~/.zshrc` file (or `~/.bashrc` if using bash) in a text editor.
-  ```bash
-  vim ~/.zshrc 
-  ```
-  Add the following line to the end of the file, replacing /path/to/chrome with the actual path to the Chrome binary:
-   ```bash
-  export CHROME_BINARY_PATH="/path/to/chrome" 
-  ```
-   Save the file and reload your ~/.zshrc configuration.
-  ```bash
-  source ~/.zshrc
-  ```
+  - Find the path where you decided to extract the Chrome binary.
+  - Open your `~/.zshrc` file (or `~/.bashrc` if using bash) in a text editor.
+    ```bash
+      vim ~/.zshrc 
+    ```
+  - Add the following line to the end of the file, replacing /path/to/chrome with the actual path to the Chrome binary:
+
+    ```bash
+      export CHROME_BINARY_PATH="/path/to/chrome" 
+      ```
+   
+  - Save the file and reload your ~/.zshrc configuration.
+
+    ```bash
+    source ~/.zshrc
+    ```
 ### 4. Set the chromedriver Environment Variable
   - Find the path where you decided to extract the Chrome Driver binary.
   - Open your `~/.zshrc` file (or `~/.bashrc` if using bash) in a text editor.
-  ```bash
-  vim ~/.zshrc 
-  ```
-  Add the following line to the end of the file, replacing /path/to/chrome with the actual path to the Chrome binary:
-   ```bash
-  export PATH="$PATH:/path/to/chromedriver"
-  ```
-   Save the file and reload your ~/.zshrc configuration.
-  ```bash
-  source ~/.zshrc
-  ```
+    ```bash
+    vim ~/.zshrc 
+    ```
+  - Add the following line to the end of the file, replacing /path/to/chrome with the actual path to the Chrome binary:
+    ```bash
+     export PATH="$PATH:/path/to/chromedriver"
+    ```
+  - Save the file and reload your ~/.zshrc configuration.
+    ```bash
+      source ~/.zshrc
+    ```
 ### 5. Verify the Configuration
-- Verify that the CHROME_BINARY_PATH environment variable is set correctly:
-```bash
-  echo $CHROME_BINARY_PATH
-```
-- Verify that chromedriver is in your PATH and the chrome driver version:
-```bash
-  which chromedriver && chromedriver --version
-```
+  - Verify that the CHROME_BINARY_PATH environment variable is set correctly:
+    ```bash
+      echo $CHROME_BINARY_PATH
+    ```
+  - Verify that chromedriver is in your PATH and the chrome driver version:
+    ```bash
+      which chromedriver && chromedriver --version
+    ```
+    
+Now, you are ready to run the Selenium Golang Application!
+
+
 
   
 
