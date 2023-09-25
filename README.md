@@ -81,7 +81,10 @@ Selenium Grid allows you to run tests on different machines against different br
   ```bash
   java -jar selenium-server.jar standalone --port 4444 --selenium-manager true
   ```
-
+- To see the concurrent requests being made in the browser visit:
+  ```bash
+  http://localhost:4444/ui#
+  ```
 - Now, you are ready to run the Selenium Golang Application by navigating to the project folder and running the following command:
   ```bash
   go run main.go
